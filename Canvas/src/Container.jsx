@@ -1,25 +1,14 @@
-// import React from 'react'
-// import BlueNote from './BlueNote.jsx'
-// function Container() {
-//     const onAddNote = (color) => {
-//         console.log(color)
-//     }
-//     return (
-//         <div className='flex flex-col h-[90vh] w-[90vw] bg-amber-50'>
-//             <BlueNote onAddNote={onAddNote} /> 
-//         </div>
-//     )
-// }
-
-import BlueNote from './BlueNote.jsx'
-function Container () {
-    const onAddNote = (color) => {
-        console.log(color)
-    }
+import BlueNote from "./BlueNote";
+function Container() {
     return (
-        <div>
-            <BlueNote onAddNote={onAddNote}/>
+        <>
+        <div className="flex justify-center items-start h-screen w-screen mt-14">
+            <BlueNote/>
+            <div className='flex  h-[70vh] w-[75vw] bg-white rounded-2xl ml-5'>
+                <p className='text-gray-400'>Click the blue box to add a note</p>
+            </div>
         </div>
+        </>
     )
 }
 
